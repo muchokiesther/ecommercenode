@@ -1,4 +1,3 @@
-
 import express, {json} from 'express'
 import router from './Routes'
 import userRoutes from './Routes/userRoutes'
@@ -31,3 +30,4 @@ app.listen(4000, ()=>{
 // we dont have the types
 //and to work with typescript we require the types
 // @types  to install the types of the libraries and we can now work with typescript fully
+
