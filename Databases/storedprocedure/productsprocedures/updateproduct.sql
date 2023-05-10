@@ -1,5 +1,10 @@
-CREATE OR ALTER PROCEDURE updateProduct(@id VARCHAR(200), @pname VARCHAR(155), @pdesc VARCHAR(155), @pimage VARCHAR(155), @price INT)
+CREATE OR ALTER PROCEDURE updateProduct(
+    @productid VARCHAR(200),
+    @pname VARCHAR(155), 
+    @pdesc VARCHAR(155), 
+    @pimage VARCHAR(155), 
+    @price INT)
 AS 
 BEGIN
-UPDATE products SET productid=@id, productName=@pname, productDescription=@pdesc, productImage=@pimage, price=@price 
+UPDATE products SET productName=@pname, productDescription=@pdesc, productImage=@pimage, price=@price WHERE productid=@productid AND isDeleted=0
 END

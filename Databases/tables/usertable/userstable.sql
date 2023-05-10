@@ -1,7 +1,8 @@
-USE  ASSIGNMENT
-go
+-- not necessary
+-- USE  ASSIGNMENT
+-- go
  
- CREATE TABLE users(
+CREATE TABLE users(
  id VARCHAR(200) PRIMARY KEY,
  userName VARCHAR(155),
  fullName VARCHAR(155),
@@ -10,3 +11,4 @@ go
  password VARCHAR (200),
  isDeleted INT DEFAULT 0
  )
+ 

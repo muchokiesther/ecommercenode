@@ -6,5 +6,5 @@ CREATE OR ALTER PROCEDURE addproduct(
 	@price INT ) 
 AS
 BEGIN
-INSERT INTO products (productid ,productName, productDescription, productImage, price) VALUES(@productid, @productname, @productdescription ,@productimage, @price)
+INSERT INTO products(productid ,productName, productDescription, productImage, price) VALUES(@productid, @productname, @productdescription ,@productimage, @price)
 END

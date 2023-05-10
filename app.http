@@ -1,0 +1,40 @@
+####
+
+
+POST http://localhost:4000/product
+Content-Type: application/json
+
+{
+    "productName": "Red Jam",
+    "productDescription": "made of red & yellow plums",
+    "productImage": "link",
+    "price": 150
+}
+
+
+
+####
+
+
+GET http://localhost:4000/product
+
+
+####
+
+
+GET  http://localhost:4000/product/07da0373-bf24-486e-8109-46a5b81db1a7
+
+####
+PUT http://localhost:4000/product/02d9527f-0afc-4d13-af34-b17abe726c6f
+Content-Type: application/json
+
+{
+    "productName": "Red Jam",
+    "productDescription": "made of red & yellow plums",
+    "productImage": "link",
+    "price": 15
+}
+
+
+####
+DELETE http://localhost:4000/product/02d9527f-0afc-4d13-af34-b17abe726c6f
