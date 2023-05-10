@@ -1,5 +1,5 @@
-CREATE OR ALTER PROCEDURE deleteProduct(@id VARCHAR(200)
+CREATE OR ALTER PROCEDURE deleteProduct(@productid VARCHAR(200))
 AS 
 BEGIN
-UPDATE products SET isDeleted=1 WHERE productid=@id 
+UPDATE products SET isDeleted=1 WHERE productid=@productid 
 END
